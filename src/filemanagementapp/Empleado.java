@@ -6,12 +6,14 @@ public class Empleado implements Serializable {
     private String name;
     private int edad;
     private int legajo;
+    
     //constructor
     public void Empleado(String name, int edad, int legajo) {
         this.name = name;
         this.edad = edad;
         this.legajo = legajo;
     }
+    
     //propiedades
     public void setName(String value){
         this.name = value;
@@ -31,12 +33,14 @@ public class Empleado implements Serializable {
     public int getLegajo(){
         return legajo;
     }
+    
     //constructor
     public void Empleado(){
         this.name = "";
         this.edad = 0;
         this.legajo = 0;
     }
+    
     //metodo
     public String mostrarEmpleado(){
         return "Empleado "+name+" de edad "+edad+" y legajo " + legajo;
