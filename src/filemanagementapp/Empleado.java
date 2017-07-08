@@ -31,13 +31,14 @@ public class Empleado implements Serializable {
     public int getLegajo(){
         return legajo;
     }
+    
     //constructor
     public void Empleado(){
         this.name = "";
         this.edad = 0;
         this.legajo = 0;
     }
-    //metodo
+    //metodos
     public String mostrarEmpleado(){
         return "Empleado "+name+" de edad "+edad+" y legajo " + legajo;
     }

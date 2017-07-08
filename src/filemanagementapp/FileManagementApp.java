@@ -14,7 +14,6 @@ public class FileManagementApp {
             FileNotFoundException, 
             IOException, 
             ClassNotFoundException {
-
         File archivo = new File("empleados.txt");
         ArrayList<Empleado> listaEmpleados = new ArrayList<Empleado>();
         Empleado e1 = new Empleado();
@@ -30,7 +29,7 @@ public class FileManagementApp {
         listaEmpleados.add(e1);
         
         listaEmpleados.add(e2);
-        
+        //tratamineto de escritura
         FileOutputStream fos = new FileOutputStream(archivo);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
 
@@ -40,6 +39,7 @@ public class FileManagementApp {
         oos.close();
         fos.close();
         
+        //tratamiento de lectura
         FileInputStream fis = new FileInputStream(archivo);
         ObjectInputStream ois = new ObjectInputStream(fis);
         ArrayList<Empleado> empleadosEscribir = new ArrayList<Empleado>();
